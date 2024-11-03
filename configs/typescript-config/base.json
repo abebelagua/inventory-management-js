@@ -1,0 +1,87 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        /**
+         * Set the JavaScript language version for emitted JavaScript and
+         * include compatible library declarations.
+         */
+        "target": "ES2022",
+        /**
+         * Specify what module code is generated.
+         */
+        "module": "NodeNext",
+        /**
+         * Allow import json files
+         */
+        "resolveJsonModule": true,
+        /**
+         * Generate .d.ts files from TypeScript and JavaScript files in your
+         * project.
+         */
+        "declaration": true,
+        /**
+         * Only for development purposes. This option is not recommended for production
+         * Create source map files for emitted Typescript files.
+         */
+        "declarationMap": true,
+        /**
+         * Specify how TypeScript looks up a file from a given module specifier.
+         */
+        "moduleResolution": "NodeNext",
+        "moduleDetection": "force",
+        /**
+         * Emit additional JavaScript to ease support for importing CommonJS
+         * modules. This enables 'allowSyntheticDefaultImports' for type
+         * compatibility.
+         */
+        "esModuleInterop": true,
+        /**
+         * Enable all strict type-checking options.
+         */
+        "strict": true,
+        /**
+         * Check that the arguments for 'bind', 'call', and 'apply' methods
+         * match the original function.
+         */
+        "strictBindCallApply": true,
+        /**
+         * Avoid the 'null' and 'undefined' values without explicit type
+         */
+        "strictNullChecks": true,
+        /**
+         * Avoid the 'any' type
+         */
+        "noImplicitAny": true,
+        /**
+         * Force the use of consistent casing in file names
+         */
+        "forceConsistentCasingInFileNames": true,
+        /**
+         * Enable error reporting for fallthrough cases in switch statements.
+         */
+        "noFallthroughCasesInSwitch": true,
+        /**
+         * Skip type checking all .d.ts files.
+         */
+        "skipLibCheck": true,
+        /**
+         * Save .tsbuildinfo files to allow for incremental compilation of
+         * projects.
+         */
+        "incremental": false,
+        /**
+         * Specify a set of bundled library declaration files that describe the
+         * target runtime environment.
+         */
+        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+        /**
+         * Forces accesses to indexed properties to take into account that the
+         * value could be undefined
+         */
+        "noUncheckedIndexedAccess": true,
+        /**
+         * Set the newline character for emitting files.
+         */
+        "newLine": "lf"
+    }
+}

@@ -1,0 +1,32 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "compilerOptions": {
+        /**
+         * Only for development purposes. This option is not recommended for production
+         * Create source map files for emitted Javascript files.
+         */
+        "sourceMap": true,
+        /**
+         * Disable emitting comments.
+         */
+        "removeComments": true,
+        /**
+         * Enable experimental support for TC39 stage 2 draft decorators.
+         */
+        "experimentalDecorators": true,
+        /**
+         * Emit design-type metadata for decorated declarations in source files.
+         */
+        "emitDecoratorMetadata": true,
+        /**
+         * Specify the root directory of input files.
+         */
+        "rootDir": "./src",
+        /**
+         * Specify an output folder for all emitted files.
+         */
+        "outDir": "./lib"
+    },
+    "include": ["src/**/*"],
+    "exclude": ["node_modules", "dist", "**/*.test.ts"]
+}
