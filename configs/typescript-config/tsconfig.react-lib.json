@@ -1,0 +1,25 @@
+{
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "./base.json",
+    "compilerOptions": {
+        "isolatedModules": true,
+        "jsx": "react-jsx",
+        /**
+         * Generate .d.ts files from TypeScript and JavaScript files in your
+         * project.
+         */
+        "declaration": true,
+        /**
+         * Create source map files for emitted Typescript files.
+         */
+        "declarationMap": true,
+        /**
+         * Create source map files for emitted Javascript files.
+         */
+        "sourceMap": true,
+        /**
+         * Disable emitting comments.
+         */
+        "removeComments": false,
+    }
+}

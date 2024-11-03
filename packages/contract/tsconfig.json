@@ -1,13 +1,23 @@
 {
     "compilerOptions": {
-        "target": "ES2022",
-        "module": "NodeNext",
-        "moduleResolution": "NodeNext",
+        /**
+         * Specify the root directory of input files.
+         */
+        "rootDir": "./src",
+        /**
+         * Specify an output folder for all emitted files.
+         */
+        "outDir": "./lib",
         "removeComments": false,
         "declaration": true,
-        "outDir": "lib",
         "sourceMap": true
     },
-    "include": ["src/**/*"],
-    "exclude": ["node_modules", "lib", ".eslintrc.*"]
+    "include": [
+        "src/**/*"
+    ],
+    "exclude": [
+        "node_modules",
+        "lib",
+        ".eslintrc.*"
+    ]
 }

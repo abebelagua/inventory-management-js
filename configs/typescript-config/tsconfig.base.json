@@ -11,20 +11,6 @@
          */
         "module": "NodeNext",
         /**
-         * Allow import json files
-         */
-        "resolveJsonModule": true,
-        /**
-         * Generate .d.ts files from TypeScript and JavaScript files in your
-         * project.
-         */
-        "declaration": true,
-        /**
-         * Only for development purposes. This option is not recommended for production
-         * Create source map files for emitted Typescript files.
-         */
-        "declarationMap": true,
-        /**
          * Specify how TypeScript looks up a file from a given module specifier.
          */
         "moduleResolution": "NodeNext",
@@ -35,6 +21,10 @@
          * compatibility.
          */
         "esModuleInterop": true,
+        /**
+         * Allow import json files
+         */
+        "resolveJsonModule": true,
         /**
          * Enable all strict type-checking options.
          */
@@ -68,12 +58,16 @@
          * Save .tsbuildinfo files to allow for incremental compilation of
          * projects.
          */
-        "incremental": false,
+        "incremental": true,
         /**
          * Specify a set of bundled library declaration files that describe the
          * target runtime environment.
          */
-        "lib": ["ES2022", "DOM", "DOM.Iterable"],
+        "lib": [
+            "ES2022",
+            "DOM",
+            "DOM.Iterable"
+        ],
         /**
          * Forces accesses to indexed properties to take into account that the
          * value could be undefined
@@ -82,6 +76,18 @@
         /**
          * Set the newline character for emitting files.
          */
-        "newLine": "lf"
+        "newLine": "lf",
+        /**
+         * Enable experimental support for TC39 stage 2 draft decorators.
+         */
+        "experimentalDecorators": true,
+        /**
+         * Emit design-type metadata for decorated declarations in source files.
+         */
+        "emitDecoratorMetadata": true,
+        /**
+         * Allow default imports from modules with no default export.
+         */
+        "allowSyntheticDefaultImports": true,
     }
 }
