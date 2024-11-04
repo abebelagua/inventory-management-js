@@ -1,4 +1,6 @@
 {
+    "$schema": "https://json.schemastore.org/tsconfig",
+    "extends": "@abc/typescript-config/configs/tsconfig.base.json",
     "compilerOptions": {
         /**
          * Specify the root directory of input files.
@@ -8,9 +10,23 @@
          * Specify an output folder for all emitted files.
          */
         "outDir": "./lib",
-        "removeComments": false,
+        /**
+         * Generate .d.ts files from TypeScript and JavaScript files in your
+         * project.
+         */
         "declaration": true,
-        "sourceMap": true
+        /**
+         * Create source map files for emitted Typescript files.
+         */
+        "declarationMap": true,
+        /**
+         * Create source map files for emitted Javascript files.
+         */
+        "sourceMap": true,
+        /**
+         * Disable emitting comments.
+         */
+        "removeComments": false,
     },
     "include": [
         "src/**/*"
@@ -18,6 +34,6 @@
     "exclude": [
         "node_modules",
         "lib",
-        ".eslintrc.*"
+        ".turbo",
     ]
 }

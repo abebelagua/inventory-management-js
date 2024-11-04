@@ -1,5 +1,5 @@
 {
-    "extends": "@abc/typescript-config/tsconfig.next.json",
+    "extends": "@abc/typescript-config/configs/tsconfig.next.json",
     "compilerOptions": {
         "plugins": [
             {

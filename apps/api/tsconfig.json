@@ -1,6 +1,6 @@
 {
     "$schema": "https://json.schemastore.org/tsconfig",
-    "extends": "@abc/typescript-config/tsconfig.nest.json",
+    "extends": "@abc/typescript-config/configs/tsconfig.nest.json",
     "compilerOptions": {
         /**
          * Specify the root directory of input files.
@@ -17,6 +17,7 @@
     "exclude": [
         "node_modules",
         "dist",
+        ".turbo",
         "test",
         "**/*spec.ts"
     ]

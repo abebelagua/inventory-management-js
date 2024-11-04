@@ -1,8 +1,13 @@
 {
-    "extends": "@abc/typescript-config/tsconfig.react-lib.json",
+    "extends": "@abc/typescript-config/configs/tsconfig.react-lib.json",
     "compilerOptions": {
         "outDir": "dist"
     },
-    "include": ["src"],
-    "exclude": ["node_modules", "dist"]
+    "include": [
+        "src"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist"
+    ]
 }
